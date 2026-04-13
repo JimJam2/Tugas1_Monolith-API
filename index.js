@@ -8,7 +8,7 @@ app.set('view engine', 'ejs');
 app.get('/', async (req, res) => {
     try {
         // Mengambil data 10 produk dari FakeStore API
-        const response = await axios.get('https://fakestoreapi.com/products?limit=10');
+        const response = await axios.get('https://fakestoreapi.com/products?limit=12');
         const products = response.data;
 
         // Mengirim data produk ke file view 'index.ejs'
